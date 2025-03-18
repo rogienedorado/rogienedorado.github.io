@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rogiene's Website</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(/assets/images/bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-size: 2rem;
+            }
+
+            div > .movie {
+                align-items: center;
+            }
+            
+            #about {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin-top: 100px;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .h3col {
+                flex-direction: column;  
+                gap: 100px;
+                align-items: center;
+            }
+
+            img { 
+                height: 500px;
+                width: 600px;
+
+            }
+
+            a { color: black;}
+            #about > a { color: blue;}
+        </style>
+    </head>
+    <body>
+        <div class="h1"><h1>Rogiene Dorado's Portfolio</h1></div>
+            <div class="h2"><h2>I'm a Web Developer</h2></div>
+            <hr/>
+                <div class="movie"><h3><a href="/assets/public/movierankings.html">Movie Ranking Project</a></h3>
+                    <img src="/assets/images/movie2.png" height="200px" width="200px" alt="List of Movies"></div>
+        <div class="grid">
+                    <div class="h3col"><h3><a href="/assets/public/animals.html">Animal List</a></h3>
+                    <img src="/assets/images/animals2.png" height="200px" width="200px" alt="List of Animals"></div>
+                    <div class="h3col"><h3><a href="/assets/public/birthday.html">Birthday Invite</a></h3>
+                    <img src="/assets/images/bday2.png" height="200px" width="200px" alt="Birthday Invite"></div>
+        </div>
+        <div id="about"><p><a href="/assets/public/about.html">About Me</a></p>
+            <p><a href="/assets/public/contact.html">Contact Me</a></p></div>
+    </body>
+</html>

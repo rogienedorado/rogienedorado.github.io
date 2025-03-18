@@ -1,5 +1,5 @@
-const body = document.body
-const div = document.createElement("div")
-body.append(div)
+const div = document.querySelector('div')
 
-div.innerHTML = "<strong>hello developers!</strong>"
+const
+
+
