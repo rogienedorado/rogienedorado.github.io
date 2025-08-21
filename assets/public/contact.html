@@ -3,60 +3,63 @@
     body {
       background-image: url(/assets/images/cbg.png);
       background-repeat: no-repeat;
-      background-size: 100% auto ;
+      background-size: 100% auto;
       display: flex;
       flex-direction: column;
+      align-items: flex-start; /* Left-align content */
+      padding: 20px;           /* Space from edges */
       font-size: 3rem;
-      }
+      box-sizing: border-box;
+    }
 
-      h1 {
-        color: #dba830;
-      }
+    .content-wrapper {
+      max-width: 1200px;       /* Prevent content from stretching too much */
+      width: 100%;
+    }
 
-      p {
-        color: whitesmoke;
-        margin: 48px;
-      }
-      
-      a {
-        color: white;
-      }
+    h1 {
+      color: #dba830;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: whitesmoke;
+      margin: 20px 0;
+    }
+
+    a {
+      color: white;
+      word-break: break-word;
+    }
 
     @media (min-width: 490px) and (max-width: 1200px) {
       body {
-      background-image: url(/assets/images/cbg.png);
-      background-repeat: no-repeat;
-      background-size: 100% 1200px;
-      display: flex;
-      align-content: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 2rem;
+        background-size: 100% 1200px;
+        font-size: 2rem;
+        padding: 30px;
       }
     }
 
     @media (max-width: 489px) {
       body {
-      background-image: url(/assets/images/cbg.png);
-      background-repeat: no-repeat;
-      background-size: 100% 1500px;
-      display: flex;
-      align-content: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 24pt;
+        background-size: 100% 1500px;
+        font-size: 24pt;
+        padding: 15px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Get In Touch</h1>
-  <p>Contact Number :  +639269813911</p>
-  <p>Email Address: rogienedorado@gmail.com</p>
-  
-  <p>
-    LinkedIn Profile: <br>
-    <a href="https://www.linkedin.com/in/rogienedorado">https://www.linkedin.com/in/rogienedorado</a>
-  </p>
-</div>
+  <div class="content-wrapper">
+    <h1>Get In Touch</h1>
+    <p>Contact Number : +639269813911</p>
+    <p>Email Address: rogienedorado@gmail.com</p>
+    <p>
+      LinkedIn Profile: <br>
+      <a href="https://www.linkedin.com/in/rogienedorado">
+        https://www.linkedin.com/in/rogienedorado
+      </a>
+    </p>
+  </div>
 </body>

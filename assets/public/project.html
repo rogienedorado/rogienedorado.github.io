@@ -1,67 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Rogiene's Website</title>
-        <style>
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: url(/assets/images/bg.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-                font-size: 2rem;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Rogiene's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            background-image: url(/assets/images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-            div > .movie {
-                align-items: center;
-            }
-            
-            #about {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-                margin-top: 100px;
-            }
+        h1, h2 {
+            text-align: center;
+            width: 100%;
+            margin: 20px 0;
+        }
 
+        hr {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .movie {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        .h3col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        img { 
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+
+            border-radius: 8px;
+        }
+
+        a { 
+            color: black; 
+            text-decoration: none;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        #about a { 
+            color: black; 
+        }
+
+        /* Responsive: collapse grid to single column under 768px */
+        @media (max-width: 768px) {
             .grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
+                grid-template-columns: 1fr;
             }
+        }
+    </style>
+</head>
+<body>
+    <h1>Rogiene Dorado's Portfolio</h1>
+    <h2>I'm a Web Developer</h2>
+    <hr/>
 
-            .h3col {
-                flex-direction: column;  
-                gap: 100px;
-                align-items: center;
-            }
+    <div class="movie">
+        <h3><a href="https://rogienedorado.github.io/Resume/">Basic Resume</a></h3>
+        <img src="/assets/images/resume.png" alt="photo">
+    </div>
 
-            img { 
-                height: 500px;
-                width: 600px;
-
-            }
-
-            a { color: black;}
-            #about > a { color: blue;}
-        </style>
-    </head>
-    <body>
-        <div class="h1"><h1>Rogiene Dorado's Portfolio</h1></div>
-            <div class="h2"><h2>I'm a Web Developer</h2></div>
-            <hr/>
-                <div class="movie"><h3><a href="/assets/public/movierankings.html">Movie Ranking Project</a></h3>
-                    <img src="/assets/images/movie2.png" height="200px" width="200px" alt="List of Movies"></div>
-        <div class="grid">
-                    <div class="h3col"><h3><a href="/assets/public/animals.html">Animal List</a></h3>
-                    <img src="/assets/images/animals2.png" height="200px" width="200px" alt="List of Animals"></div>
-                    <div class="h3col"><h3><a href="/assets/public/birthday.html">Birthday Invite</a></h3>
-                    <img src="/assets/images/bday2.png" height="200px" width="200px" alt="Birthday Invite"></div>
+    <div class="grid">
+        <div class="h3col">
+            <h3><a href="https://rogienedorado.github.io/Dog-API-Rogiene-Dorado/">Dog Api</a></h3>
+            <img src="/assets/images/dogApi.png" alt="List of Animals">
         </div>
-        <div id="about"><p><a href="/assets/public/about.html">About Me</a></p>
-            <p><a href="/assets/public/contact.html">Contact Me</a></p></div>
-    </body>
+        <div class="h3col">
+            <h3><a href="https://rogienedorado.github.io/Resume-Website/">Resume Website</a></h3>
+            <img src="/assets/images/resWeb.png" alt="Birthday Invite">
+        </div>
+    </div>
+
+    <div id="about">
+        <p><a href="/assets/public/about.html">About Me</a></p>
+        <p><a href="/assets/public/contact.html">Contact Me</a></p>
+    </div>
+</body>
 </html>

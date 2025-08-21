@@ -185,6 +185,10 @@ div.text > p {
     width: 496px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 3px solid black; /* add border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* optional shadow */
+    display: block;
+    margin: auto;
 }
 
 div.box3 > .photo {
@@ -192,7 +196,10 @@ div.box3 > .photo {
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    border: 3px solid black; /* add border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* optional shadow */
 }
+
 
 .view {
     border-radius: 8px;
